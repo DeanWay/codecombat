@@ -18,7 +18,7 @@ if includeSpellList
     .glyphicon.glyphicon-repeat
     span.spl(data-i18n="play_level.reload") Reload
   
-  if levelType !== 'hero' && levelType !== 'hero-ladder' && levelType !== 'hero-coop'
+  if me.level() > 9
    .btn.btn-small.btn-illustrated.fullscreen-code(title=maximizeShortcutVerbose)
      .glyphicon.glyphicon-fullscreen
      .glyphicon.glyphicon-resize-small
